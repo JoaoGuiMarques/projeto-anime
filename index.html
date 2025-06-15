@@ -13,9 +13,9 @@
          <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
         <nav id="itens">
             <ul>
-                <li>Início</li>
-                <li>Sobre Animes</li>
-                <li>Tier List</li>
+                <li><a href="index.html">Início</a></li>
+                <li><a href="pg03.html">Sobre Animes</a></li>
+                <li><a href="pg04.html">List Animes</a></li>
             </ul>
         </nav>
     </header>
@@ -26,15 +26,15 @@
             <p>Preencha o formulário abaixo para se conectar com outros fãs e compartilhar sua paixão por animes de romance.</p>
         </div>
 
-        <form action="" method="post">
+        <form action="pg02.html" autocomplete="on">
             <fieldset>
                 <legend>Seus Dados e Anime</legend>
 
                 <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome">
+                <input type="text" name="nome" id="nome" required placeholder="Seu nome">
 
                 <label for="email">Email:</label>
-                <input type="email" name="email" id="email">
+                <input type="email" name="email" id="email" required placeholder="seu.email@example.com">
 
                 <label for="anime">Seu Anime de Romance Favorito:</label>
                 <select name="anime" id="anime">
@@ -49,7 +49,7 @@
                     <option value="Bunny Girl Senpai">Bunny Girl Senpai</option>
                 </select>
 
-                <button><a href="#">Enviar e Conectar!</a></button>
+                <button>Enviar e Conectar!</button>
             </fieldset>
         </form>
     </main>

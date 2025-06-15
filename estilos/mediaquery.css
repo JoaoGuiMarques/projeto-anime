@@ -1,14 +1,19 @@
 @charset "UTF-8";
 
-      .burguer-ativo {
+
+#itens {
+    display: none;
+}
+
+.burguer-ativo {
         background-color: #2C3E50;
         width: 100%;
         padding: 10px;
-      }
+    }
 
-      span {
-        padding: 10px;
-      }
+span {
+    padding: 10px;
+}
 
 @media screen and (min-width: 768px) {
       #burguer {

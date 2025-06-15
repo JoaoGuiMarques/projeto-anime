@@ -27,10 +27,6 @@ nav {
   padding: 18px;
 }
 
-#itens {
-    display: none;
-}
-
 ul {
   list-style: none;
   display: flex;
@@ -82,6 +78,7 @@ h1 {
 
 .container p {
     margin: 20px 40px;
+    font-size: 1.1rem;
 }
 
 form {

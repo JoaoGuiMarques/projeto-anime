@@ -5,32 +5,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romantic Animes - Confirmação</title>
     <link rel="stylesheet" href="estilos/style02.css">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/mediaquery.css">
 </head>
-<body>
-    <header>
-        <nav>
-            <ul>
-                <li>Início</li>
-                <li>Sobre Animes</li>
-                <li>Tier List</li>
-            </ul>
-        </nav>
-    </header>
+    <body onload="mudouTamanho()" onresize="mudouTamanho()">
+        <header>
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <nav id="itens">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="pg03.html">Sobre Animes</a></li>
+                    <li><a href="pg04.html">List Animes</a></li>
+                </ul>
+            </nav>
+        </header>
 
     <main>
         <h1>Obrigado por se conectar ao Mundo dos Animes de Romance!</h1>
 
-        <p>Sua paixão foi registrada com sucesso. Em breve, você receberá novidades e conteúdos exclusivos sobre seus animes favoritos.</p>
+        <p id="up">Sua paixão foi registrada com sucesso. Em breve, você receberá novidades e conteúdos exclusivos sobre seus animes favoritos.</p>
 
-        <p>Agradecemos o seu interesse!</p>
+        <p id="down">Agradecemos o seu interesse!</p>
 
-        <button>Voltar à Página Inicial</button>
-        <button>Descobrir Mais Sobre Aimes</button>
-        <button>Ir à Tier List</button>
+        <div class="botoes">
+            <button><a href="index.html">Voltar à Página Inicial</a></button>
+            <button><a href="pg03.html">Descobrir Mais Sobre Aimes</a></button>
+            <button><a href="pg04.html">Ir à Lista</a></button>
+        </div>
     </main>
 
-    <footer>
-        &copy; 2025 Romantic Animes - Todos os direitos reservados.
+    <footer class="footer">
+        <p>© 2025 Romantic Animes - Todos os direitos reservados.</p>
+        <p>
+            <a href="https://www.linkedin.com/in/joaoguimarques/" target="_blank" class="footer-link">LinkedIn</a> | 
+            <a href="https://www.instagram.com/_.joao_marques/" target="_blank" class="footer-link">Instagram</a> | 
+            <a href="https://github.com/JoaoGuiMarques" target="_blank" class="footer-link">GitHub</a>
+        </p>
     </footer>
+
+    <script>
+        function clickMenu() {
+        const menu = document.getElementById('itens');
+        const burguer = document.getElementById('burguer');
+
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+            burguer.classList.remove('burguer-ativo');
+        } else {
+            menu.style.display = 'block';
+            burguer.classList.add('burguer-ativo');
+        }
+    }
+    </script>
 </body>
 </html>

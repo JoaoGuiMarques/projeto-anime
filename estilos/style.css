@@ -1,2 +1,168 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Lora", serif;
+}
+
+main {
+    flex: 1;
+}
+
+html, body {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+nav {
+  background-color: #2C3E50;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.3);
+  text-align: center;
+  padding: 18px;
+}
+
+#itens {
+    display: none;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+li {
+  color: white;
+  font-weight: bold;
+  font-size: 1.15rem;
+
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 10px;
+  display: inline-block;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: #1A252F;
+  border-radius: 5px;
+}
+
+body {
+  background: linear-gradient(135deg, #e0f2fe, #c7d2fe);
+  height: 100vh;
+}
+
+.container {
+    width: 80vw;
+    margin: auto;
+    text-align: center;
+}
+
+h1 {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 3rem;
+  color: #333333;
+}
+
+.container p {
+    margin: 20px 40px;
+}
+
+form {
+  max-width: 500px;
+  width: 90%;
+  margin: auto;
+  padding: 1rem;
+  box-sizing: border-box;
+}
+
+fieldset {
+  border: 2px solid #ccc;
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+legend {
+  font-weight: bold;
+  font-size: 1.2rem;
+  color: #333333;
+}
+
+label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 500;
+}
+
+input, select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-top: 0.5rem;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+button {
+  margin-top: 1.5rem;
+  padding: 0.8rem;
+  width: 100%;
+  background-color: #f4e1d2;
+  color: #3e2f1c;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border: none;
+  border-radius: 6px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color:#fcd47d;
+}
+
+button a {
+  color: #333;
+  text-decoration: none;
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+.footer {
+  background-color: #2C3E50; /* cor escura similar à navbar */
+  color: #f0f0f0;
+  padding: 20px 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  font-size: 14px;
+  box-shadow: 0 -2px 5px rgba(0,0,0,0.3);
+}
+
+.footer-link {
+  color: #ecf0f1;
+  text-decoration: none;
+  margin: 0 8px;
+  transition: color 0.3s ease;
+}
+
+.footer-link:hover {
+  color: #3498db; /* cor azul para efeito hover */
+}

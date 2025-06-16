@@ -213,7 +213,7 @@ button a {
   color: #3498db; /* cor azul para efeito hover */
 }
 
-@media (max-width: 768px) {
+@media (max-width: 767px) {
   .temas-container {
     display: flex;
     flex-direction: column;

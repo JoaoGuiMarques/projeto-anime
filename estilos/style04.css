@@ -4,20 +4,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
 
+
 * {
   margin: 0;
   padding: 0;
   font-family: "Lora", serif;
-}
-
-main {
-    flex: 1;
-}
-
-html, body {
-    height: 100%;
-    display: flex;
-    flex-direction: column;
 }
 
 nav {
@@ -56,15 +47,10 @@ nav a:hover {
   border-radius: 5px;
 }
 
+
+
 body {
   background: linear-gradient(135deg, #e0f2fe, #c7d2fe);
-  height: 100vh;
-}
-
-.container {
-    width: 80vw;
-    margin: auto;
-    text-align: center;
 }
 
 h1 {
@@ -76,70 +62,51 @@ h1 {
   color: #333333;
 }
 
-.container p {
-    margin: 20px 40px;
-    font-size: 1.1rem;
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: center;
+  padding: 30px;
+  background: linear-gradient(135deg, #e0f2fe, #c7d2fe);
 }
 
-form {
-  max-width: 500px;
-  width: 90%;
-  margin: auto;
-  padding: 1rem;
-  box-sizing: border-box;
+.card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  width: 280px;
+  padding: 15px;
+  text-align: left;
+  transition: transform 0.3s ease;
 }
 
-fieldset {
-  border: 2px solid #ccc;
-  padding: 1rem;
-  border-radius: 8px;
+.card:hover {
+  transform: translateY(-5px);
 }
 
-legend {
-  font-weight: bold;
-  font-size: 1.2rem;
-  color: #333333;
-}
-
-label {
-  display: block;
-  margin-top: 1rem;
-  font-weight: 500;
-}
-
-input, select {
+.card-img {
   width: 100%;
-  padding: 0.75rem;
-  margin-top: 0.5rem;
-  border-radius: 6px;
-  border: 1px solid #ccc;
-  box-sizing: border-box;
+  height: 160px;
+  border-radius: 12px;
+  object-fit: cover;
+  object-position: center 25%;
 }
 
-button {
-  margin-top: 1.5rem;
-  padding: 0.8rem;
-  width: 100%;
-  background-color: #f4e1d2;
-  color: #3e2f1c;
-  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
-  border: none;
-  border-radius: 6px;
-  font-size: 1rem;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
-}
-
-button:hover {
-  background-color:#fcd47d;
-}
-
-button a {
+.card h2 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px;
   color: #333;
-  text-decoration: none;
-  display: block;
-  width: 100%;
-  height: 100%;
+}
+
+.card p {
+  font-size: 0.95rem;
+  color: #555;
+  margin: 4px 0;
+}
+
+#bluebox {
+      object-position: center 40%;
 }
 
 .footer {
@@ -162,3 +129,6 @@ button a {
 .footer-link:hover {
   color: #3498db; /* cor azul para efeito hover */
 }
+
+
+

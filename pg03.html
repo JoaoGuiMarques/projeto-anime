@@ -4,63 +4,95 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Romantic Animes - Sobre</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="estilos/mediaquery.css">
+    <link rel="stylesheet" href="estilos/style03.css">
 </head>
-<body>
-
-    <header>
-        <nav>
-            <ul>
-                <li>Início</li>
-                <li>Sobre Animes</li>
-                <li>Tier List</li>
-            </ul>
-        </nav>
-    </header>
+    <body onload="mudouTamanho()" onresize="mudouTamanho()">
+        <header>
+            <span id="burguer" class="material-symbols-outlined" onclick="clickMenu()">menu</span>
+            <nav id="itens">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="pg03.html">Sobre Animes</a></li>
+                    <li><a href="pg04.html">List Animes</a></li>
+                </ul>
+            </nav>
+        </header>
     
     <main>
 
-        <section>
-            <h1>Tudo Sobre o Fascinante Mundo dos Animes</h1>
-            <p>
-                O fascinante mundo dos animes de romance é um universo repleto de emoções intensas, conexões humanas e histórias que tocam o coração. Esses animes exploram as nuances do amor em suas mais diversas formas — seja o primeiro amor inocente da adolescência, os desafios dos relacionamentos maduros ou os sentimentos complexos que surgem entre amigos e amantes.
-                O que torna os animes de romance tão especiais é a forma como conseguem combinar drama, comédia e momentos de ternura, criando uma experiência que faz o espectador se identificar profundamente com os personagens. Cada olhar, gesto ou palavra carregada de significado ajuda a construir uma narrativa que vai muito além do simples romance, abordando temas como autodescoberta, superação de medos e o valor da empatia.
-                Além disso, os animes de romance frequentemente se destacam pela beleza visual, com cenários detalhados e trilhas sonoras que amplificam a atmosfera emocional. Essa combinação única torna cada história memorável, despertando no público uma conexão afetiva que muitas vezes permanece por muito tempo após os episódios terminarem.
-                No fim das contas, o charme dos animes de romance está em sua capacidade de mostrar que o amor, em todas as suas formas, é uma força poderosa capaz de transformar vidas, ensinar lições valiosas e, principalmente, tocar a alma de quem assiste.
-            </p>
-        </section>
+    <section>
+        <h1>Tudo Sobre o Fascinante Mundo dos Animes de Romance</h1>
+        <p>
+            O fascinante mundo dos animes de romance é um universo repleto de emoções intensas, conexões humanas e histórias que tocam o coração. Esses animes exploram as nuances do amor em suas mais diversas formas — seja o primeiro amor inocente da adolescência, os desafios dos relacionamentos maduros ou os sentimentos complexos que surgem entre amigos e amantes.
+            O que torna os animes de romance tão especiais é a forma como conseguem combinar drama, comédia e momentos de ternura, criando uma experiência que faz o espectador se identificar profundamente com os personagens. Cada olhar, gesto ou palavra carregada de significado ajuda a construir uma narrativa que vai muito além do simples romance, abordando temas como autodescoberta, superação de medos e o valor da empatia.
+            Além disso, os animes de romance frequentemente se destacam pela beleza visual, com cenários detalhados e trilhas sonoras que amplificam a atmosfera emocional. Essa combinação única torna cada história memorável, despertando no público uma conexão afetiva que muitas vezes permanece por muito tempo após os episódios terminarem.
+            No fim das contas, o charme dos animes de romance está em sua capacidade de mostrar que o amor, em todas as suas formas, é uma força poderosa capaz de transformar vidas, ensinar lições valiosas e, principalmente, tocar a alma de quem assiste.
+        </p>
+    </section>
 
-        <article>
-            <h2>Temas Comuns em Animes de Romance</h2>
+    <article>
+        <h2>Temas Comuns em Animes de Romance</h2>
 
-            <ul>
-                <li>Primeiro Amor e Descobertas</li>
+        <div class="temas-container">
+            <div class="tema">
+                <h3>Primeiro Amor e Descobertas</h3>
                 <p>Muitos animes focam no despertar dos sentimentos românticos durante a adolescência, mostrando a inocência, as dúvidas e as descobertas que acompanham o primeiro amor.</p>
-
-                <li>Amadurecimento e Crescimento Pessoal</li>
+            </div>
+            <div class="tema">
+                <h3>Amadurecimento e Crescimento Pessoal</h3>
                 <p>O romance muitas vezes serve como pano de fundo para o desenvolvimento dos personagens, que aprendem sobre si mesmos e enfrentam seus medos e inseguranças.</p>
-
-                <li>Triângulos Amorosos e Conflitos Emocionais</li>
+            </div>
+            <div class="tema">
+                <h3>Triângulos Amorosos e Conflitos Emocionais</h3>
                 <p>Esse clássico tema cria tensão e drama, explorando dilemas entre sentimentos, escolhas difíceis e relações complexas.</p>
-
-                <li>Superação de Obstáculos</li>
+            </div>
+            <div class="tema">
+                <h3>Superação de Obstáculos</h3>
                 <p>Barreiras como diferenças sociais, distância, mal-entendidos ou problemas familiares são comuns, mostrando que o amor verdadeiro muitas vezes exige esforço e coragem.</p>
-
-                <li>Amizade que Evolui para Romance</li>
+            </div>
+            <div class="tema">
+                <h3>Amizade que Evolui para Romance</h3>
                 <p>Muitas histórias começam com uma forte amizade que gradualmente se transforma em amor, destacando a importância da conexão emocional e confiança.</p>
-
-                <li>Romance e Comédia</li>
+            </div>
+            <div class="tema">
+                <h3>Romance e Comédia</h3>
                 <p>A combinação de momentos engraçados com situações românticas cria uma atmosfera leve e divertida, muito presente em animes que equilibram emoção e humor.</p>
-            </ul>
-        </article>
+            </div>
+        </div>
+    </article>
 
-        <img src="imagens/anime.jpg" alt="imagem de animes">
+    <img src="imagens/anime.jpg" alt="imagem de animes">
 
+    <div class="botoes">
         <button>Voltar à Página Inicial</button>
         <button>Ir à Tier List</button>
-    </main>
+    </div>
+</main>
 
-    <footer>
-        &copy; 2025 Romantic Animes - Todos os direitos reservados.
+    <footer class="footer">
+        <p>© 2025 Romantic Animes - Todos os direitos reservados.</p>
+        <p>
+            <a href="https://www.linkedin.com/in/joaoguimarques/" target="_blank" class="footer-link">LinkedIn</a> | 
+            <a href="https://www.instagram.com/_.joao_marques/" target="_blank" class="footer-link">Instagram</a> | 
+            <a href="https://github.com/JoaoGuiMarques" target="_blank" class="footer-link">GitHub</a>
+        </p>
     </footer>
+
+    <script>
+        function clickMenu() {
+        const menu = document.getElementById('itens');
+        const burguer = document.getElementById('burguer');
+
+        if (menu.style.display === 'block') {
+            menu.style.display = 'none';
+            burguer.classList.remove('burguer-ativo');
+        } else {
+            menu.style.display = 'block';
+            burguer.classList.add('burguer-ativo');
+        }
+    }
+    </script>
 </body>
 </html>

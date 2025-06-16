@@ -64,7 +64,7 @@ nav a:hover {
 
 
 body {
-  background: linear-gradient(135deg, #e0f2fe, #c7d2fe);
+  background: linear-gradient(to right, #e0f2fe, #c7d2fe);
   height: 100vh;
 }
 
@@ -110,6 +110,10 @@ button {
   font-size: 1rem;
   cursor: pointer;
   transition: background-color 0.3s ease;
+}
+
+#inf {
+  margin-bottom: 20px;
 }
 
 button:hover {

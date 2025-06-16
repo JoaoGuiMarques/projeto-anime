@@ -212,3 +212,21 @@ button a {
 .footer-link:hover {
   color: #3498db; /* cor azul para efeito hover */
 }
+
+@media (max-width: 768px) {
+  .temas-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+    padding: 0 1rem;
+  }
+
+  .tema {
+    width: 100%;
+    max-width: 340px;
+  }
+
+  .tema p {
+    text-align: left;
+  }
+}

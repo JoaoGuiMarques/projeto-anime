@@ -18,7 +18,7 @@ main {
     display: flex;
     flex-direction: column;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1400px; /* <-- alterado de 1000px */
     margin: auto;
     padding: 0 1rem;
 }
@@ -105,17 +105,18 @@ article {
     flex-direction: column;
     align-items: center;
     width: 100%;
-    max-width: 1000px;
+    max-width: 1400px; /* <-- alterado de 1000px */
     margin: 2rem auto;
     padding: 0 1rem;
 }
+
 
 .temas-container {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 1.5rem;
     width: 100%;
-    max-width: 1200px;
+    max-width: 1400px; /* <-- alterado de 1200px */
     margin: 0 auto;
     padding: 0 1rem;
 }
@@ -147,7 +148,6 @@ article {
 img {
   width: 80%;
   max-width: 100%;
-  height: auto;
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
   margin: 20px auto;
@@ -182,6 +182,8 @@ button:hover {
 
 button a {
   color: #333;
+  font-size: 1.2rem;
+  font-weight: 500;
   text-decoration: none;
   display: block;
   width: 100%;
